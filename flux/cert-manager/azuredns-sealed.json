@@ -10,14 +10,14 @@
     "template": {
       "metadata": {
         "name": "azuredns-config",
-        "namespace": "default",
+        "namespace": "cert-manager",
         "creationTimestamp": null,
         "managedFields": [
           {
             "manager": "kubectl",
             "operation": "Update",
             "apiVersion": "v1",
-            "time": "2020-06-10T21:24:05Z",
+            "time": "2020-06-10T21:29:21Z",
             "fieldsType": "FieldsV1",
             "fieldsV1": {"f:data":{".":{},"f:client-secret":{}},"f:type":{}}
           }
@@ -26,7 +26,7 @@
       "type": "Opaque"
     },
     "encryptedData": {
-      "client-secret": "AgCk6FOLriQf4CvYOGR5BT6dtzkrhwCWQ50Na3/kIPCSCeDkAJcTF/p1QuJpY43qYh7bNcN4MpUNEvRWGIfJWNjJ3yMmqkzUBq2WdUl3mitbuOwQzF3TjEdCkK1cqbopFBWtVAGrJ/bcJOZTReTc2IxDdpo2Q1t2ngyi9g6gue0x9pTLHDQvPkIbpH8OffgjURxyW6dyYFfOv/uUnAgMU+qhqaBCUbTfQjZq+dKazEONiZctJOPt66ILOdyF5UNq6LQ3nMASRlxl+FFvg/CObYfGndkX+Xaz92lyuEkC+6q6gpz+32C0KNnGGyvfjCMf7uobAWan7t+nKhGjen6cBnZfI4aEuPDyPUKGkbG/ZA5M6B3m5HobszEwcKKELUB1OMgrD/ONZChq10JPKp+p3JvAkyjO6NQxpcYEea4nt3uTquVaieLYA/AJ53TJvMWnj41ml+Kh/kRTYD9AXXyfq/kd7KGTC/uDtQRJjpd/vDFl5QvNZnsHPmnHNodPvDswkJ19dqtgX56m6CTbdO7b1aGTFqVjirpH8h3WfonP4lndBP1giVmw01Z0/y3cPad2zJJsBaUom+CEnTt6pmp9QRU0TJBShyN/TQaOgNtRqv63rGM265ZHKrx4aGvSbQbZ9oNHVNvdQ+qH+m71N6wl1MFqEX2kl2MseZeYLD/D44eL8vAXZpBJwxUHChO8v8lLy70hU7Wb2UOSU+nhH2KM6Vqyqj/S3jX+g4ckuiFstwIIkwTz"
+      "client-secret": "AgCj/XDzi40fFA/a3B3ayQyo5kTLZNVEaZJow2jQoIEwQOlHqVCke8mAxAB3sjQshIxBqzIWO9aaMBLRAv8QN5VXhB5DDkEfWgWU+pz8pHp1KuIm9jTUu7sK3r6+vzEnQ6eDmUAeZvOiEUJf7x8fSOiDJ423lLw4kGd04Y1RjPsyAoyUE63YNphFfrF5G54cDjlHam4XaFfRNc1Odt4dMcqFM38t421pd5zR9Ph77snCtJB4YgCoyalAl1TNBjZX6+mQ+qcZHiso07WwIJujAQ3ofx7B0YjdlVcK2ndOyWfjZHnSGlcJbeRrEnUqyGzJKbeJRxBoEQfOGZYB5/dzkxVuT5RuliZ0sIVYLwOGp/mogko4EtZixhTC4/QeYFu6wXEpHaFJvXda8ozRgbTPHujIxcUqucN04fAZN0HAWMNnVmPXX8ZI5j7gWbkavgWfzF0W+ajFgKyKcozHSKZtMyIxJ48u5ooV1T0UMM6F9Anr0fcVc3vkP25DUmGZhA5eWdiVkschCdTf67THlmlZ+XyXEOdZE+MwUaptj6/NJn5KG6P8KmaPQPCJE12EFtCCKFXecMrhIw+k/IsjJj1Q1nfPRr2AHuI1o/Hc+Fu+kYYbV2m/Po/6tketZpR207IiS7GmezznulvdUYhfaFNOJjAcEEIfV3jZzAjR0Wk+GAfbZuhy0I9ITn+U2ddE9P1qe522SzKIciUKDGFCYHVIOieOEWThB2xyslSwGfOjjZEuGZkc"
     }
   }
 }
