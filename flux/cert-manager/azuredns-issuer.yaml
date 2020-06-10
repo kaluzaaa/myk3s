@@ -1,0 +1,26 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: ClusterIssuer
+namespace: cert-manager
+metadata:
+  name: azuredns-issuer
+spec:
+  acme:
+    email: xyz@kaluzny.pro
+    server: https://acme-v02.api.letsencrypt.org/directory
+    privateKeySecretRef:
+      # Secret resource that will be used to store the account's private key.
+      name: xyz-issuer-account-key
+    solvers:
+    - dns01:
+        azuredns:
+          clientID: cce049fb-b824-4423-8127-93f60afaba91
+          clientSecretSecretRef:
+          # The following is the secret we created in Kubernetes. Issuer will use this to present challenge to Azure DNS.
+            name: azuredns-config
+            key: client-secret
+          subscriptionID: 8511939a-9567-440e-8e60-43a4be2d22e6
+          tenantID: cc58971a-0481-4ec0-bf8d-bb2e265db003
+          resourceGroupName: myk3s
+          hostedZoneName: myk3s.xyz
+          # Azure Cloud Environment, default to AzurePublicCloud
+          environment: AzurePublicCloud
