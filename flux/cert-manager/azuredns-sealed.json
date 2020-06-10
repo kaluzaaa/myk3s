@@ -1,0 +1,32 @@
+{
+  "kind": "SealedSecret",
+  "apiVersion": "bitnami.com/v1alpha1",
+  "metadata": {
+    "name": "azuredns-config",
+    "namespace": "cert-manager",
+    "creationTimestamp": null
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "name": "azuredns-config",
+        "namespace": "default",
+        "creationTimestamp": null,
+        "managedFields": [
+          {
+            "manager": "kubectl",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2020-06-10T21:24:05Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {"f:data":{".":{},"f:client-secret":{}},"f:type":{}}
+          }
+        ]
+      },
+      "type": "Opaque"
+    },
+    "encryptedData": {
+      "client-secret": "AgCk6FOLriQf4CvYOGR5BT6dtzkrhwCWQ50Na3/kIPCSCeDkAJcTF/p1QuJpY43qYh7bNcN4MpUNEvRWGIfJWNjJ3yMmqkzUBq2WdUl3mitbuOwQzF3TjEdCkK1cqbopFBWtVAGrJ/bcJOZTReTc2IxDdpo2Q1t2ngyi9g6gue0x9pTLHDQvPkIbpH8OffgjURxyW6dyYFfOv/uUnAgMU+qhqaBCUbTfQjZq+dKazEONiZctJOPt66ILOdyF5UNq6LQ3nMASRlxl+FFvg/CObYfGndkX+Xaz92lyuEkC+6q6gpz+32C0KNnGGyvfjCMf7uobAWan7t+nKhGjen6cBnZfI4aEuPDyPUKGkbG/ZA5M6B3m5HobszEwcKKELUB1OMgrD/ONZChq10JPKp+p3JvAkyjO6NQxpcYEea4nt3uTquVaieLYA/AJ53TJvMWnj41ml+Kh/kRTYD9AXXyfq/kd7KGTC/uDtQRJjpd/vDFl5QvNZnsHPmnHNodPvDswkJ19dqtgX56m6CTbdO7b1aGTFqVjirpH8h3WfonP4lndBP1giVmw01Z0/y3cPad2zJJsBaUom+CEnTt6pmp9QRU0TJBShyN/TQaOgNtRqv63rGM265ZHKrx4aGvSbQbZ9oNHVNvdQ+qH+m71N6wl1MFqEX2kl2MseZeYLD/D44eL8vAXZpBJwxUHChO8v8lLy70hU7Wb2UOSU+nhH2KM6Vqyqj/S3jX+g4ckuiFstwIIkwTz"
+    }
+  }
+}
