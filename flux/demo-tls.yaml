@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+namespace: default
+metadata:
+  name: pk
+spec:
+  selector:
+    matchLabels:
+      app: pk
+  template:
+    metadata:
+      labels:
+        app: pk
+    spec:
+      containers:
+      - name: demo
+        image: nginx
+        resources: {}
+        ports:
+        - containerPort: 80
+          name: http
+---
+kind: Service
+apiVersion: v1
+namespace: default
+metadata:
+  name: pk
+spec:
+  selector:
+    app: pk
+  type: ClusterIP
+  ports:
+  - name: http
+    port: 80
+    targetPort: http
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+namespace: default
+metadata:
+  name: pk
+  annotations:
+    cert-manager.io/cluster-issuer: "azuredns-issuer"
+spec:
+  tls:
+  - hosts:
+    - demo.myk3s.xyz
+    secretName: demo.myk3s.xyz
+  rules:
+    - host: demo.myk3s.xyz
+      http:
+        paths:
+        - backend:
+            serviceName: pk
+            servicePort: 80
