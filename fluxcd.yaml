@@ -62,7 +62,7 @@ spec:
     spec:
       nodeSelector:
         beta.kubernetes.io/os: linux
-      serviceAccountName: flux
+      serviceAccountName: namespaces,manifets
       volumes:
       - name: git-key
         secret:
