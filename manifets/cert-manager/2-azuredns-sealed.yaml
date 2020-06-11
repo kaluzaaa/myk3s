@@ -1,0 +1,29 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"bitnami.com/v1alpha1","kind":"SealedSecret","metadata":{"annotations":{},"creationTimestamp":null,"name":"azuredns-config","namespace":"cert-manager"},"spec":{"encryptedData":{"client-secret":"AgCj/XDzi40fFA/a3B3ayQyo5kTLZNVEaZJow2jQoIEwQOlHqVCke8mAxAB3sjQshIxBqzIWO9aaMBLRAv8QN5VXhB5DDkEfWgWU+pz8pHp1KuIm9jTUu7sK3r6+vzEnQ6eDmUAeZvOiEUJf7x8fSOiDJ423lLw4kGd04Y1RjPsyAoyUE63YNphFfrF5G54cDjlHam4XaFfRNc1Odt4dMcqFM38t421pd5zR9Ph77snCtJB4YgCoyalAl1TNBjZX6+mQ+qcZHiso07WwIJujAQ3ofx7B0YjdlVcK2ndOyWfjZHnSGlcJbeRrEnUqyGzJKbeJRxBoEQfOGZYB5/dzkxVuT5RuliZ0sIVYLwOGp/mogko4EtZixhTC4/QeYFu6wXEpHaFJvXda8ozRgbTPHujIxcUqucN04fAZN0HAWMNnVmPXX8ZI5j7gWbkavgWfzF0W+ajFgKyKcozHSKZtMyIxJ48u5ooV1T0UMM6F9Anr0fcVc3vkP25DUmGZhA5eWdiVkschCdTf67THlmlZ+XyXEOdZE+MwUaptj6/NJn5KG6P8KmaPQPCJE12EFtCCKFXecMrhIw+k/IsjJj1Q1nfPRr2AHuI1o/Hc+Fu+kYYbV2m/Po/6tketZpR207IiS7GmezznulvdUYhfaFNOJjAcEEIfV3jZzAjR0Wk+GAfbZuhy0I9ITn+U2ddE9P1qe522SzKIciUKDGFCYHVIOieOEWThB2xyslSwGfOjjZEuGZkc"},"template":{"metadata":{"creationTimestamp":null,"managedFields":[{"apiVersion":"v1","fieldsType":"FieldsV1","fieldsV1":{"f:data":{".":{},"f:client-secret":{}},"f:type":{}},"manager":"kubectl","operation":"Update","time":"2020-06-10T21:29:21Z"}],"name":"azuredns-config","namespace":"cert-manager"},"type":"Opaque"}}}
+  creationTimestamp: null
+  name: azuredns-config
+  namespace: cert-manager
+spec:
+  encryptedData:
+    client-secret: AgCj/XDzi40fFA/a3B3ayQyo5kTLZNVEaZJow2jQoIEwQOlHqVCke8mAxAB3sjQshIxBqzIWO9aaMBLRAv8QN5VXhB5DDkEfWgWU+pz8pHp1KuIm9jTUu7sK3r6+vzEnQ6eDmUAeZvOiEUJf7x8fSOiDJ423lLw4kGd04Y1RjPsyAoyUE63YNphFfrF5G54cDjlHam4XaFfRNc1Odt4dMcqFM38t421pd5zR9Ph77snCtJB4YgCoyalAl1TNBjZX6+mQ+qcZHiso07WwIJujAQ3ofx7B0YjdlVcK2ndOyWfjZHnSGlcJbeRrEnUqyGzJKbeJRxBoEQfOGZYB5/dzkxVuT5RuliZ0sIVYLwOGp/mogko4EtZixhTC4/QeYFu6wXEpHaFJvXda8ozRgbTPHujIxcUqucN04fAZN0HAWMNnVmPXX8ZI5j7gWbkavgWfzF0W+ajFgKyKcozHSKZtMyIxJ48u5ooV1T0UMM6F9Anr0fcVc3vkP25DUmGZhA5eWdiVkschCdTf67THlmlZ+XyXEOdZE+MwUaptj6/NJn5KG6P8KmaPQPCJE12EFtCCKFXecMrhIw+k/IsjJj1Q1nfPRr2AHuI1o/Hc+Fu+kYYbV2m/Po/6tketZpR207IiS7GmezznulvdUYhfaFNOJjAcEEIfV3jZzAjR0Wk+GAfbZuhy0I9ITn+U2ddE9P1qe522SzKIciUKDGFCYHVIOieOEWThB2xyslSwGfOjjZEuGZkc
+  template:
+    metadata:
+      creationTimestamp: null
+      managedFields:
+      - apiVersion: v1
+        fieldsType: FieldsV1
+        fieldsV1:
+          f:data:
+            .: {}
+            f:client-secret: {}
+          f:type: {}
+        manager: kubectl
+        operation: Update
+        time: "2020-06-10T21:29:21Z"
+      name: azuredns-config
+      namespace: cert-manager
+    type: Opaque
