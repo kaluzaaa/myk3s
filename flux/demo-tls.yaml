@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
-namespace: default
 metadata:
   name: pk
+  namespace: default
 spec:
   selector:
     matchLabels:
@@ -22,9 +22,9 @@ spec:
 ---
 kind: Service
 apiVersion: v1
-namespace: default
 metadata:
   name: pk
+  namespace: default
 spec:
   selector:
     app: pk
@@ -34,20 +34,20 @@ spec:
     port: 80
     targetPort: http
 ---
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
-namespace: default
 metadata:
   name: pk
   annotations:
+    namespace: default
     cert-manager.io/cluster-issuer: "azuredns-issuer"
 spec:
   tls:
   - hosts:
-    - demo.myk3s.xyz
-    secretName: demo.myk3s.xyz
+    - demo-v2.myk3s.xyz
+    secretName: demo-v2.myk3s.xyz
   rules:
-    - host: demo.myk3s.xyz
+    - host: demo-v2.myk3s.xyz
       http:
         paths:
         - backend:
