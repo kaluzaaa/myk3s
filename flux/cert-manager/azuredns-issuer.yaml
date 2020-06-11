@@ -1,6 +1,5 @@
 apiVersion: cert-manager.io/v1alpha2
 kind: ClusterIssuer
-namespace: cert-manager
 metadata:
   name: azuredns-issuer
 spec:
@@ -18,9 +17,9 @@ spec:
           # The following is the secret we created in Kubernetes. Issuer will use this to present challenge to Azure DNS.
             name: azuredns-config
             key: client-secret
-          subscriptionID: 8511939a-9567-440e-8e60-43a4be2d22e6
+          subscriptionID: 6971d276-35b3-4f54-b0c4-1acb7b5ea458
           tenantID: cc58971a-0481-4ec0-bf8d-bb2e265db003
-          resourceGroupName: myk3s
+          resourceGroupName: myk3s.xyz
           hostedZoneName: myk3s.xyz
           # Azure Cloud Environment, default to AzurePublicCloud
           environment: AzurePublicCloud
