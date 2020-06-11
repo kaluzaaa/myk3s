@@ -58,6 +58,7 @@ spec:
         - --source=ingress
         - --provider=azure
         - --azure-resource-group=myk3s.xyz
+        - --fqdn-template={{.Name}}.myk3s.xyz
         volumeMounts:
         - name: azure-config-file
           mountPath: /etc/kubernetes
