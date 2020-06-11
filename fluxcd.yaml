@@ -62,7 +62,7 @@ spec:
     spec:
       nodeSelector:
         beta.kubernetes.io/os: linux
-      serviceAccountName: namespaces,manifets
+      serviceAccountName: flux
       volumes:
       - name: git-key
         secret:
@@ -186,7 +186,7 @@ spec:
         # https://$(GIT_AUTHUSER):$(GIT_AUTHKEY)@github.com/user/repository.git
         - --git-url=git@github.com:kaluzaaa/myk3s
         - --git-branch=master
-        - --git-path=flux
+        - --git-path=namespaces,manifets
         - --git-label=flux
         - --git-user=kaluzaaa
         - --git-email=kaluzaaa@users.noreply.github.com
